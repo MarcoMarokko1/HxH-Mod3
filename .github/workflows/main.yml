@@ -24,7 +24,7 @@ jobs:
           gradle-version: '8.1.1'
 
       - name: Build mod
-        run: gradle clean build --no-daemon
+        run: gradle -p "hxh-nen-mod-github (2)" clean build --no-daemon
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
